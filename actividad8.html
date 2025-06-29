@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 8</title>
+</head>
+
+<body>
+    <script>
+        function calcular(a, b, operacion) {
+            if (operacion === "+") return a + b;
+            else if (operacion === "-") return a - b;
+            else if (operacion === "*") return a * b;
+            else if (operacion === "/") return b !== 0 ? a / b : "No es posible dividir entre cero";
+            else return "Operación no reconocida";
+        }
+
+        let num1 = parseFloat(prompt("Primer número:"));
+        let num2 = parseFloat(prompt("Segundo número:"));
+        let op = prompt("Escribe la operación que deseas realizar (+, -, *, /):");
+
+        let resultado = calcular(num1, num2, op);
+
+        alert(`Resultado obtenido: ${resultado}`);
+        console.log(`Entrada: ${num1} ${op} ${num2}`);
+        console.log(`Resultado: ${resultado}`);
+    </script>
+</body>
+
+</html>
