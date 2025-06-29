@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 9</title>
+</head>
+
+<body>
+    <script>
+        function esMayorDeEdad(edad) {
+            return edad >= 18;
+        }
+
+        let edad = parseInt(prompt("¿Cuál es tu edad?"));
+
+        if (esMayorDeEdad(edad)) {
+            alert("Acceso autorizado. Eres mayor de edad.");
+            console.log("Resultado: Mayor de edad");
+        } else {
+            alert("Acceso denegado. Necesitas tener al menos 18 años.");
+            console.log("Resultado: Menor de edad");
+        }
+    </script>
+</body>
+
+</html>
